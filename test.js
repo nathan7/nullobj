@@ -1,6 +1,7 @@
-var expect = require('chai').expect
+var test = require('tape')
   , nullobj = require('./')
 
-it('should set the prototype to null or close', function() {
-  expect(nullobj()).not.to.have.property('hasOwnProperty')
+test(function(t) {
+  t.notOk(Object.prototype.hasOwnProperty.call(nullobj(), 'hasOwnProperty'))
+  t.end()
 })

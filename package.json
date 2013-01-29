@@ -4,7 +4,7 @@
   "description": "does its best to Object.create(null)",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "tap test.js"
   },
   "repository": {
     "type": "git",
@@ -16,11 +16,10 @@
   "author": "Nathan Zadoks",
   "license": "MIT",
   "devDependencies": {
-    "chai": "~1.4.2",
-    "mocha": "~1.8.1"
+    "tape": "~0.1.5",
+    "tap": "~0.3.3"
   },
   "testling": {
-    "harness": "mocha",
     "files": "test.js",
     "browsers": {
       "ie": [
