@@ -10,7 +10,9 @@ function Empty() {}
 
 if (Object.prototype.__proto === null || typeof document == 'undefined') {
   module.exports = function nullobj() {
-    return { __proto__: null }
+    var obj = {}
+    obj.__proto__ = null
+    return obj
   }
 }
 else {
