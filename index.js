@@ -1,4 +1,4 @@
-/*jshint scripturl:true proto:true */
+/*jshint scripturl:true, proto:true */
 
 // taken from https://github.com/kriskowal/es5-shim/blob/master/es5-sham.js
 // Copyright 2009-2012 by contributors, MIT License
