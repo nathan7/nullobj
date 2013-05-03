@@ -2,7 +2,7 @@
   "name": "nullobj",
   "repo": "nathan7/nullobj",
   "description": "does its best to Object.create(null)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [],
   "dependencies": {},
   "development": {},

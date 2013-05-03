@@ -1,6 +1,6 @@
 {
   "name": "nullobj",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "does its best to Object.create(null)",
   "main": "index.js",
   "scripts": {
