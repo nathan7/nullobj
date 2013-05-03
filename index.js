@@ -21,9 +21,13 @@ else {
   iframe.style.display = 'none'
   parent.appendChild(iframe)
   iframe.src = 'javascript:'
-  var empty = iframe.contentWindow.Object.prototype
+  var empty
+  try { empty = iframe.contentWindow.Object.prototype } catch(e) {}
   parent.removeChild(iframe)
   iframe = null
+
+  if (!empty) empty = {}
+
   ;delete empty.constructor
   ;delete empty.hasOwnProperty
   ;delete empty.propertyIsEnumerable
