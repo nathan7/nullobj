@@ -10,6 +10,7 @@ test(function(t) {
   t.notOk('toLocaleString' in nullobj(), "nullobj shouldn't have toLocaleString")
   t.notOk('toString' in nullobj(), "nullobj shouldn't have toString")
   t.notOk('valueOf' in nullobj(), "nullobj shouldn't have valueOf")
+  t.equal(typeof nullobj(), 'object', "nullobj should be an object")
 
   t.end()
 })
