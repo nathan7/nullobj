@@ -26,7 +26,8 @@ else {
   parent.removeChild(iframe)
   iframe = null
 
-  if (!empty) empty = {}
+  if (!empty)
+    empty = document.createElement('x')
 
   ;delete empty.constructor
   ;delete empty.hasOwnProperty
@@ -35,6 +36,7 @@ else {
   ;delete empty.toLocaleString
   ;delete empty.toString
   ;delete empty.valueOf
+  for (var key in empty) delete empty[key]
   empty.__proto__ = null
 
   Empty.prototype = empty
