@@ -26,6 +26,14 @@ else {
   parent.removeChild(iframe)
   iframe = null
 
+  if (!empty && typeof ActiveXObject !== 'undefined') {
+    iframe = new ActiveXObject('htmlfile')
+    iframe.write('<script><\/script>')
+    iframe.close()
+    if (typeof window.attachEvent !== 'undefined') window.attachEvent('onunload', function() { iframe = null })
+    empty = iframe.parentWindow.Object.prototype
+  }
+
   if (!empty) empty = {}
 
   ;delete empty.constructor
