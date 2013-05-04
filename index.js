@@ -34,7 +34,11 @@ else {
     empty = iframe.parentWindow.Object.prototype
   }
 
-  if (!empty) empty = {}
+  if (!empty) {
+    empty = {}
+    if (typeof console !== 'undefined' && typeof console.warn === 'function')
+      console.warn('warning: failed to create a nullobj')
+  }
 
   ;delete empty.constructor
   ;delete empty.hasOwnProperty
