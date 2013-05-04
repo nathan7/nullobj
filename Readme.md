@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/nathan7/nullobj.png)](https://travis-ci.org/nathan7/nullobj)
 
-[![browser support](http://ci.testling.com/nathan7/nullobj.png)](http://ci.testling.com/nathan7/nullobj)
+[![browser support](https://ci.testling.com/nathan7/nullobj.png)](http://ci.testling.com/nathan7/nullobj)
 
 nullobj()
 =========
